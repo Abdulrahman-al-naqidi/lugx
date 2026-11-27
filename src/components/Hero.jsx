@@ -1,6 +1,6 @@
 function Hero() {
   return (
-    <section className="relative bg-main text-white rounded-b-[200px] pt-40 pb-64 overflow-hidden">
+    <section id="home" className="relative bg-main text-white rounded-b-[200px] pt-40 pb-64 overflow-hidden">
       <div className="absolute top-0 right-0 w-1/3 h-full bg-main-light rounded-bl-[300px]"></div>
       <div className="relative max-w-[1620px] mx-auto px-5 grid lg:grid-cols-2 gap-10 items-center">
         <div>
