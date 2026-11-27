@@ -7,3 +7,7 @@
   --color-pink: #f0636b;
   --color-soft: #f7f7f7;
 }
+
+html {
+  scroll-behavior: smooth;
+}
