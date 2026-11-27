@@ -9,7 +9,7 @@ const games = [
 
 function Trending() {
   return (
-    <section className="max-w-[1620px] mx-auto px-5 mt-40">
+    <section id="trending" className="max-w-[1620px] mx-auto px-5 mt-40">
       <div className="flex items-end justify-between mb-16">
         <div>
           <h6 className="text-pink font-semibold mb-3">TRENDING</h6>
