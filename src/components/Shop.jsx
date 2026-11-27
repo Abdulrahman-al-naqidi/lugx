@@ -1,6 +1,6 @@
 function Shop() {
   return (
-    <section className="max-w-[1620px] mx-auto px-5 mt-64 mb-40">
+    <section id="shop" className="max-w-[1620px] mx-auto px-5 mt-64 mb-40">
       <div className="relative lg:h-[670px] flex flex-col lg:block gap-8">
         <img
           src="/images/game2.jpg"
