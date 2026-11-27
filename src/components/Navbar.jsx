@@ -1,6 +1,11 @@
 import { useEffect, useState } from "react";
 
-const links = ["Home", "Our Shop", "Product Details", "Contact Us"];
+const links = [
+  { label: "Home", href: "#home" },
+  { label: "Our Shop", href: "#shop" },
+  { label: "Product Details", href: "#trending" },
+  { label: "Contact Us", href: "#contact" },
+];
 
 function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -18,7 +23,7 @@ function Navbar() {
       }`}
     >
       <div className="max-w-[1620px] mx-auto px-5 flex items-center justify-between">
-        <a href="#" className="flex items-center gap-4 text-3xl font-bold">
+        <a href="#home" className="flex items-center gap-4 text-3xl font-bold">
           <svg width="76" height="76" viewBox="0 0 100 100" className={scrolled ? "w-[52px]" : "w-[76px]"}>
             <circle cx="50" cy="50" r="50" fill="white" />
             <path d="M25 25 L75 75 M75 25 L25 75" stroke="#0073ff" strokeWidth="14" />
@@ -29,16 +34,16 @@ function Navbar() {
         <nav className="hidden md:flex items-center gap-2">
           {links.map((link, index) => (
             <a
-              key={link}
-              href="#"
+              key={link.label}
+              href={link.href}
               className={`px-6 py-3 rounded-full ${index === 0 ? "bg-white/15" : ""}`}
             >
-              {link}
+              {link.label}
             </a>
           ))}
-          <a href="#" className="ml-4 bg-pink px-6 py-3 rounded-full font-semibold">
+          <button type="button" className="ml-4 bg-pink px-6 py-3 rounded-full font-semibold">
             SIGN IN
-          </a>
+          </button>
         </nav>
       </div>
     </header>
