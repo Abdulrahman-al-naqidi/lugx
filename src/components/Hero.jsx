@@ -5,9 +5,9 @@ function Hero() {
       <div className="relative max-w-[1620px] mx-auto px-5 grid lg:grid-cols-2 gap-10 items-center">
         <div>
           <h6 className="text-2xl font-medium mb-6">WELCOME TO LUGX</h6>
-          <h2 className="text-6xl font-bold mb-10">
+          <h1 className="text-6xl font-bold mb-10">
             BEST <span className="underline decoration-pink decoration-4 underline-offset-8">GAMING</span> SITE EVER!
-          </h2>
+          </h1>
           <p className="max-w-xl leading-8 mb-16">
             LUGX Gaming is free Bootstrap 5 HTML CSS website template for your gaming websites. You can download and
             use this layout for commercial purposes. Please tell your friends about TemplateMo.
